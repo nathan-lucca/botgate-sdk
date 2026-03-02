@@ -1,0 +1,32 @@
+{
+  "name": "@botgate/sdk",
+  "version": "1.0.0",
+  "description": "SDK oficial do BotGate para integrar configurações de servidor no seu bot.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "botgate",
+    "sdk",
+    "config",
+    "dashboard"
+  ],
+  "author": "BotGate",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
