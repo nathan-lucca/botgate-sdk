@@ -11,6 +11,9 @@ export interface BotGateSdkConfig {
   /** API Key do bot no BotGate (obrigatório) */
   apiKey: string;
 
+  /** URL base da API do BotGate (opcional, padrão: produção) */
+  apiUrl?: string;
+
   /**
    * Tempo em segundos que as configs de um servidor ficam em cache local.
    * Evita requisições repetidas. (padrão: 300 = 5 minutos)
@@ -108,7 +111,7 @@ export class BotGateSDK {
     this.debug = config.debug ?? false;
 
     this.http = axios.create({
-      baseURL: "https://api.botgate.coden8n.shop",
+      baseURL: config.apiUrl ?? "https://api.botgate.coden8n.shop",
       timeout: 8000,
       headers: {
         Authorization: `Bearer ${config.apiKey}`,
