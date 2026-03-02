@@ -99,12 +99,11 @@ client.on("messageDelete", async (message) => {
 
 ### `new BotGateSDK(config)`
 
-| Opção      | Tipo      | Padrão          | Descrição                                    |
-| ---------- | --------- | --------------- | -------------------------------------------- |
-| `apiKey`   | `string`  | —               | API Key do bot no BotGate (**obrigatório**)  |
-| `apiUrl`   | `string`  | URL de produção | URL base da API (para testes locais)         |
-| `cacheTtl` | `number`  | `300`           | Segundos que as configs ficam em cache local |
-| `debug`    | `boolean` | `false`         | Ativa logs detalhados no console             |
+| Opção      | Tipo      | Padrão  | Descrição                                    |
+| ---------- | --------- | ------- | -------------------------------------------- |
+| `apiKey`   | `string`  | —       | API Key do bot no BotGate (**obrigatório**)  |
+| `cacheTtl` | `number`  | `300`   | Segundos que as configs ficam em cache local |
+| `debug`    | `boolean` | `false` | Ativa logs detalhados no console             |
 
 ### `getGuildSettings(guildId, forceRefresh?)`
 
