@@ -111,7 +111,7 @@ export class BotGateSDK {
     this.debug = config.debug ?? false;
 
     this.http = axios.create({
-      baseURL: config.apiUrl ?? "https://api.botgate.coden8n.shop",
+      baseURL: config.apiUrl ?? "https://api-bot.botgate.com.br",
       timeout: 8000,
       headers: {
         Authorization: `Bearer ${config.apiKey}`,
