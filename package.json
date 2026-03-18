@@ -1,6 +1,6 @@
 {
   "name": "@botgate/sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SDK oficial do BotGate para integrar configurações de servidor no seu bot.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
